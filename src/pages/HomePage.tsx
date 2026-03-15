@@ -98,6 +98,94 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Our Work Gallery */}
+      <section aria-label="Our recent work" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className={`text-center mb-12 transition-all duration-1000 delay-250 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <span className="inline-block bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+              Our Work
+            </span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4">
+              Recent Projects in San Diego
+            </h2>
+            <p className="text-xl text-slate-500 max-w-2xl mx-auto">
+              From interior loft transformations to stunning exterior fence staining — see the quality we bring to every project.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className={`md:col-span-2 md:row-span-2 overflow-hidden rounded-3xl shadow-xl group transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="relative h-64 md:h-full min-h-[300px]">
+                <img
+                  src="/WhatsApp_Image_2026-03-10_at_8.59.02_PM.jpeg"
+                  alt="Freshly painted interior hallway with clean white walls and modern finish"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <span className="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Interior Painting</span>
+                  <p className="text-white font-semibold mt-2 text-lg">Loft Interior — Downtown San Diego</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={`overflow-hidden rounded-3xl shadow-xl group transition-all duration-1000 delay-350 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="relative h-48 md:h-full">
+                <img
+                  src="/WhatsApp_Image_2026-03-10_at_8.58.58_PM.jpeg"
+                  alt="Beautifully stained cedar wood privacy fence with ocean view"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <span className="bg-green-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Fence Staining</span>
+                  <p className="text-white font-semibold mt-1">Cedar Fence — Coastal SD</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={`overflow-hidden rounded-3xl shadow-xl group transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="relative h-48 md:h-full">
+                <img
+                  src="/WhatsApp_Image_2026-03-10_at_8.59.02_PM_(2).jpeg"
+                  alt="Modern open kitchen with freshly painted white walls and clean finish"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <span className="bg-blue-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Interior Painting</span>
+                  <p className="text-white font-semibold mt-1">Kitchen & Living — Loft Unit</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={`col-span-2 overflow-hidden rounded-3xl shadow-xl group transition-all duration-1000 delay-450 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="relative h-56 md:h-64">
+                <img
+                  src="/WhatsApp_Image_2026-03-10_at_8.59.02_PM_(1).jpeg"
+                  alt="Professionally painted kitchen cabinets with clean modern finish"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <span className="bg-orange-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Cabinet Painting</span>
+                  <p className="text-white font-semibold mt-2 text-lg">Kitchen Cabinet Refresh — San Diego</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={`text-center mt-10 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <a
+              href="tel:+16193047732"
+              className="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105"
+            >
+              Get a Free Estimate — Call Now
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Offers Section */}
       <section aria-label="Special offers" className="py-20 bg-gradient-to-br from-yellow-50 via-pink-50 to-purple-50 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>

@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ColorGuidePage from './pages/ColorGuidePage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
+import BlogListPage from './pages/BlogListPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   useEffect(() => {
@@ -29,6 +31,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/colors" element={<ColorGuidePage />} />
           <Route path="/service-areas" element={<ServiceAreasPage />} />
+          <Route path="/blog" element={<BlogListPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
         </Routes>
         <Footer />
       </div>

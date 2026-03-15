@@ -10,6 +10,7 @@ export default function Navigation() {
 
   const navLinks = [
     { path: '/', label: 'Home' },
+    { path: '/blog', label: 'Blog' },
     { path: '/colors', label: 'Color Guide' },
     { path: '/service-areas', label: 'Service Areas' },
   ];

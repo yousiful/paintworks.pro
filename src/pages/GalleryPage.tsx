@@ -15,52 +15,20 @@ export default function GalleryPage() {
 
   const projects: Project[] = [
     {
-      title: 'Modern Living Room Transformation',
-      description: 'Complete interior painting with accent wall feature',
-      location: 'San Diego, CA',
+      title: 'Loft Interior Painting',
+      description: 'Full interior refresh of a modern downtown loft with clean white walls and crisp trim work',
+      location: 'Downtown San Diego, CA',
       service: 'Interior Painting',
-      beforeImage: 'placeholder',
-      afterImage: 'placeholder'
+      beforeImage: '/WhatsApp_Image_2026-03-10_at_8.59.02_PM.jpeg',
+      afterImage: '/WhatsApp_Image_2026-03-10_at_8.58.58_PM.jpeg'
     },
     {
-      title: 'Exterior Home Refresh',
-      description: 'Full exterior painting with trim and door refinishing',
-      location: 'La Jolla, CA',
-      service: 'Exterior Painting',
-      beforeImage: 'placeholder',
-      afterImage: 'placeholder'
-    },
-    {
-      title: 'Kitchen Cabinet Makeover',
-      description: 'Professional cabinet painting with modern color update',
-      location: 'Del Mar, CA',
-      service: 'Cabinet Painting',
-      beforeImage: 'placeholder',
-      afterImage: 'placeholder'
-    },
-    {
-      title: 'Master Bedroom Renovation',
-      description: 'Popcorn ceiling removal and smooth finish painting',
-      location: 'Carlsbad, CA',
-      service: 'Ceiling & Painting',
-      beforeImage: 'placeholder',
-      afterImage: 'placeholder'
-    },
-    {
-      title: 'Office Space Upgrade',
-      description: 'Commercial interior painting with custom colors',
-      location: 'Downtown San Diego',
-      service: 'Commercial Painting',
-      beforeImage: 'placeholder',
-      afterImage: 'placeholder'
-    },
-    {
-      title: 'Drywall Repair & Paint',
-      description: 'Complete drywall repair and seamless painting',
-      location: 'Chula Vista, CA',
-      service: 'Drywall & Painting',
-      beforeImage: 'placeholder',
-      afterImage: 'placeholder'
+      title: 'Outdoor Fence Staining',
+      description: 'Complete wood fence staining and refinishing with premium cedar finish',
+      location: 'San Diego, CA',
+      service: 'Exterior Staining',
+      beforeImage: '/WhatsApp_Image_2026-03-10_at_8.59.02_PM_(1).jpeg',
+      afterImage: '/WhatsApp_Image_2026-03-10_at_8.59.02_PM_(2).jpeg'
     }
   ];
 
@@ -94,20 +62,24 @@ export default function GalleryPage() {
                 onClick={() => setSelectedProject(selectedProject === index ? null : index)}
               >
                 <div className="grid grid-cols-2 h-80">
-                  <div className="relative bg-gradient-to-br from-pink-200 to-rose-300">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <ImageIcon className="w-16 h-16 mx-auto mb-2 drop-shadow-lg" />
-                        <p className="font-bold text-lg drop-shadow-md">BEFORE</p>
-                      </div>
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={project.beforeImage}
+                      alt={`Before - ${project.title}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-2 px-3">
+                      <p className="font-bold text-white text-sm tracking-wider">BEFORE</p>
                     </div>
                   </div>
-                  <div className="relative bg-gradient-to-br from-green-200 to-teal-300">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <ImageIcon className="w-16 h-16 mx-auto mb-2 drop-shadow-lg" />
-                        <p className="font-bold text-lg drop-shadow-md">AFTER</p>
-                      </div>
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={project.afterImage}
+                      alt={`After - ${project.title}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-2 px-3">
+                      <p className="font-bold text-white text-sm tracking-wider">AFTER</p>
                     </div>
                   </div>
                 </div>

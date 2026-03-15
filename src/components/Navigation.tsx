@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { PaintBucket, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +18,12 @@ export default function Navigation() {
     <nav className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="bg-gradient-to-br from-yellow-300 to-orange-400 p-2 rounded-xl shadow-lg transform group-hover:rotate-12 transition-transform">
-              <PaintBucket className="w-8 h-8 text-white" />
-            </div>
-            <span className="text-2xl font-bold text-white">Paintworks</span>
+          <Link to="/" className="flex items-center gap-2 group">
+            <img
+              src="/remake-this-logo-make-it-high-quality-an_1lOeaXi_S9e63QashsobSg_MX1MnvEZTemJ90OSV9f1Iw_hd-removebg-preview.png"
+              alt="Paint Works Pro"
+              className="h-14 w-auto object-contain drop-shadow-lg transform group-hover:scale-105 transition-transform"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
